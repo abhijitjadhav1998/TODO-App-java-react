@@ -19,6 +19,7 @@ export default class TodoApp extends Component {
                     <Routes>
                         <Route path="/" element={<LoginComponentWithNavigation />} />
                         <Route path="/login" element={<LoginComponentWithNavigation />} />
+                        <Route path="/logout" element={<LogoutComponent />} />
                         <Route path="/list_todos" element={<TodosComponent />} />
                         <Route path="/welcome/:name" element={<WelcomeComponentWithParams />} />
                         <Route path="*" element={<ErrorComponent />} />
@@ -78,7 +79,7 @@ class FooterComponent extends Component {
     render() {
         return (
             <footer className="footer">
-                <span className="text-muted">© 2022 CodeWithAJ</span>
+                <span className="text-muted">All rights reserved© 2022 CodeWithAJ</span>
             </footer>
         )
     }
