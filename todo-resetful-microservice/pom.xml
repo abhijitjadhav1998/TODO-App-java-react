@@ -65,6 +65,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<repository>abhijitjadhav1998/${project.name}</repository>
+					<tag>${project.version}</tag>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
